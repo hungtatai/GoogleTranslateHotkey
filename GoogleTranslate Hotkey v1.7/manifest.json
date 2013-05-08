@@ -1,0 +1,21 @@
+﻿{
+    "name": "Google Translate™ Hotkey",
+    "version": "1.7",
+    "description": "Using hotkey to make Google Translate™ more convenient.",
+    "permissions": [
+    ],
+	"icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+		{
+			"matches": ["http://translate.google.com/*"],
+			"js": [
+				"translate_hotkey.js"
+			]
+		}
+	]
+}
